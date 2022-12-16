@@ -1,0 +1,15 @@
+.title{
+    display: flex;
+    align-self: flex-start;
+    flex-flow: column nowrap;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.title p{
+    color: rgba(170, 170, 170, 0.863);
+}
+
+.title h2{
+    margin: 0;
+}

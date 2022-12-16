@@ -1,0 +1,122 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+/* Credit-card styles */
+.credit-card{
+    min-width: 490px;
+    max-width: 490px;
+    height: 270px;
+    background: rgb(38,40,45);
+    background: linear-gradient(253deg, rgba(38,40,45,1) 0%, rgba(34,31,31,1) 67%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.credit-card .card-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.credit-card .card-header h1{
+    margin: 0;
+    font-weight: lighter;
+}
+
+.credit-card .card-header span{
+    transform: rotate(90deg);
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.credit-card .chip{
+    width: 60px;
+    margin: 0 20px;
+}
+
+.credit-card .chip img{
+    width: 60px;
+}
+
+.credit-card .card-info-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.credit-card .card-info-img .card-info{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+}
+
+.credit-card .card-info-img .card-info h3{
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.credit-card .card-info-img .card-info span{
+    margin: 10px 0 15px 0;
+}
+.credit-card .card-info-img .card-info label{
+    font-weight: lighter;
+    font-size: 17px;
+    margin: 0;
+}
+
+.credit-card .card-info-img .card-img{
+    width: 90px;
+    margin-right: 15px;
+}
+
+/* back credit card */
+.credit-card_behind{
+    position: absolute;
+    width: 500px;
+    height: 270px;
+    z-index: -1;
+    content: " ";
+    background: rgb(38,40,45);
+    background: linear-gradient(253deg, rgb(27, 28, 31) 0%, rgba(34,31,31,1) 67%);
+    margin-left: 90px;
+    border-radius: 15px;
+    transition: all 1s;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+}
+
+.credit-card_behind .bar{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    margin-top: 40px;
+}
+
+.credit-card_behind span{
+    font-size: smaller;
+    padding: 10px;
+}
+
+.credit-card:hover{
+    transform: scale(1.01);
+}
+.credit-card_behind:hover{
+    transform: scale(1.01);
+    transform: translateY(50px);
+    margin-left: 180px;
+}

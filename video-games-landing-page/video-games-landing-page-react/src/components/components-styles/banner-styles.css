@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+.container-banner{
+    background-color: rgb(24, 26, 33);
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+.container-banner .cont-text{
+    width: 400px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.container-banner .cont-text .deco{
+    width: 80px;
+    height: 3px;
+    background-color: #6342b6;
+    border-radius: 15px;
+}
+
+.container-banner .cont-text .title span{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 50px 0;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    
+}
+
+.container-banner .cont-text .title span p{
+    margin: 4px;
+    letter-spacing: 3px;
+}
+
+.container-banner .cont-text .price{
+    width: 280px;
+    height: 12px;
+    padding: 15px 10px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+}
+
+.container-banner .cont-text .price label{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    box-shadow: none;
+    outline: none;
+    width: 93px;
+    height: 34px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: -4px;
+}
+
+.container-banner .cont-img{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-banner .cont-img img{
+    width: 100%;
+    object-fit: cover;
+}
